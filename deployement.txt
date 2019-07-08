@@ -1,0 +1,48 @@
+- Copy the project seperately						# In my case I copied my project in :D drive
+- Go to 'Getting Started on Heroku with Python'
+- Create an Heroku account
+- install pipenv									# pip install pipenv //to install virtual environment
+- Install git ( check git --version)				# install pip from website //type 'git --version' to check git installed or not
+- Install Heroku CLI								# Install it form website 
+- Login heroku										# heroku login //to login in heroku server
+- Go to the directory where you copied the project  # cd directoryname 
+- Create a virtual environment						# python -m virtualenv . //to create vevn
+- Activate created virtual environment				# .\scripts\activate // to activate venv
+- Run manage.py not gonna run 						# Because no application is installed in virtual environment
+- Check applications in Django						# pip freeze //To check installed applications in Django
+- Install all applitions which is in Django 		# pip install 'appname' /Just copy the appname from django after pip freeze
+- Run manage.py now will run 						# Virtual env is setuped 
+- Go to django heroku to configure 					# https://devcenter.heroku.com/articles/django-app-configuration
+- Create a Procfile in your project folder  		# should be text file and remove .txt extension 
+- Write in Procfile									# paste web: gunicorn myproject.wsgi //write your project name at myproject 
+- Save and close Procfile 
+- Install gunicorn 								# pip install gunicorn
+- Install django-heroku								# pip install django-heroku
+- Add import stuff at the top of settings.py file   		# import django_heroku 
+- Add stuff at bottom of settings.py file 			# django_heroku.settings(locals()) // To Activate Django-Heroku.
+- Make requirements.txt file 						# pip freeze > requirements.txt // It will contain all the requriments needed  
+- heroku create studentweb 							# To create an app on heroku, replace studentweb for your app 
+- You can see your app on heroku server				# http://studentweb.herokuapp.com/  //studentweb is your app name 
+- Check git installed or not 						# git --version //will show version name if installed
+- Initialze git 									# git init  // It will create .git file (hidden file)
+- See the files which are not added in git 			# git status // Will show you all files which are not added 
+- Now add files in git shown in status				# git add --all // will add the files in git
+- Now commit the changes to add in server 			# git commit -m "first commit" //will commit the changes with a comment
+- Create remote to heroku in git repository 		# heroku git:remote -a studentweb //No need to do again and again
+- Now push all files to heroku app 					# git push heroku master // Will push all files 
+- Open the website will show your website 			# https://studentweb.herokuapp.com/ // You can now see you website here
+- Admin panel won't work until you migrate 			
+- Run heroku bash to make migration					# heroku run bash //Will create linux terminal
+- list files 								# ls // It is a linux command to list the all files
+- Now migrate 								# python manage.py migrate // It will migrate all the database changes
+- Create admin to login on admin panel 				# python manage.py createsuperuser // You can create admin and  password
+- Allright you can login at admin panel				# You can able to see items in database and manipulate it.
+- If you make and changes then follow below 
+
+
+----------------------TO MAKE CHANGES IN WEBSITE-----------------------------
+
+-> git status			# To see new changes 
+-> git add --all 		# To  add all changes
+-> git commit -m "Any comment"	# Commit added changes 
+-> git push heroku master	# To send(push) changes on heroku server

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Style css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+          integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+</head>
+<body><center>
+    <form class = 'custom' method="post" action="/login2/">
+        <div>
+            <div class = 'contain'>
+            {% csrf_token %}
+                <h1 class = 'heading'>Log In </h1>
+                <div class="input-icon">
+                    <input type="text" name="username1" placeholder="ID NUMBER" required><br>
+                    <i class="fas fa-id-card-alt"></i>
+                </div>
+                <div class="input-icon">
+                    <input type="password" name="password1" id="password" required placeholder="PASSWORD">
+                    <i class="fas fa-lock" aria-hidden="true"></i>
+                </div>
+                <button type="submit" name="submit" id="submit" class="btn btn-success mb-2">Login</button><br><br>
+                </div>
+            </div>
+    </form>
+</center>
+</body>
+</html>

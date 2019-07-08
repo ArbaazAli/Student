@@ -1,0 +1,48 @@
+body {
+	background-color : #ececec;
+	text-align: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: Impact;
+	text-transform: uppercase;
+}
+
+input {
+	display: block;
+  border: none;
+  border-radius: 10px;
+	padding: 8px;
+}
+
+input:focus, select:focus {
+background-color : #BDEDFF ;
+font-color : red;
+outline: 0;
+}
+
+select {
+  width : 200px;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.center-it {
+	flex : 0;
+}
+
+.contain {
+	color: white;
+    width: 75% ;
+    background: #323232;
+    margin-top: 7rem;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-content: center;
+    margin-left: 130px;
+}
+

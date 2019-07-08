@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load  static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+          integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/textstyles.css' %}">
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% include 'navbar/navbar.html' %}
+    {% include 'navbar/banner.html' %}
+    <div class="container"> 
+
+        <p id="para1">ABOUT PROJECT</p>
+        <h5 style="text-align: justify;"><p>A student information system (SIS), student management system, school administration software or student administration system is a management information system for education establishments to manage student data. Student information systems provide capabilities for registering students in courses; documenting grading, transcripts, results of student tests and other assessment scores; building student schedules; tracking student attendance; and managing many other student-related data needs in a school.<br/></p>
+        <p>A student management system helps schools to store, manage, and distribute this information.
+        </p></h5> 
+        <div class="about">
+        <p><h4>About PVPP College of Engineering</h4></p>
+        <p style="text-align: justify;"> Padmabhushan Vasantdada Patil Pratishthan's College of Engineering is established in 1990 by Late Shri. Manohar (Mama) Phalke with the grace of Late Padmabhushan Vasantdada Patil, the former Chief Minister of Maharashtra and Governor of Rajasthan. The college is spread over a total area of 7.34 acres of land, out of which 4 acres is for playground. It is located in the heart of Mumbai city, on Eastern Express Highway and closely connected with central and harbour line train stations. The College is approved by All India Council for Technical Education (AICTE), New Delhi and Directorate of Technical Education (DTE), Maharashtra and affiliated to University of Mumbai to conduct degree courses in Computer Engineering, Electronics and Telecommunication Engineering and Information Technology. Institute is accredited by National Board of Accreditation (NBA) for 3 years w.e.f. March 15, 2012. Institute is honored with 2nd rank among the Mumbai Colleges by Higher Education Review and Ranked 9th in the "Top 20 Engineering Colleges in India with Excellent Industry Exposure" in 2017 . </p>
+        </div>
+        <div class="training">
+        <p><h4>Training &amp; Placement Department</h4></p>
+        <p style="text-align: justify;"> Padmabhushan Vasantdada Patil Pratishthan's College of Engineering is established in 1990 by Late Shri. Manohar (Mama) Phalke with the grace of Late Padmabhushan Vasantdada Patil, the former Chief Minister of Maharashtra and Governor of Rajasthan. The college is spread over a total area of 7.34 acres of land, out of which 4 acres is for playground. It is located in the heart of Mumbai city, on Eastern Express Highway and closely connected with central and harbour line train stations. The College is approved by All India Council for Technical Education (AICTE), New Delhi and Directorate of Technical Education (DTE), Maharashtra and affiliated to University of Mumbai to conduct degree courses in Computer Engineering, Electronics and Telecommunication Engineering and Information Technology. Institute is accredited by National Board of Accreditation (NBA) for 3 years w.e.f. March 15, 2012. Institute is honored with 2nd rank among the Mumbai Colleges by Higher Education Review and Ranked 9th in the "Top 20 Engineering Colleges in India with Excellent Industry Exposure" in 2017 . </p>
+        </div>
+    </div>
+<style type="text/css">
+    .about h4, .training h4{
+        text-align: center;
+        padding: 10px;
+        background-color: #006400;
+        color: #fff;
+    }
+</style>
+<footer>{% include 'navbar/footer.html' %}</footer>
+</body>
+</html>

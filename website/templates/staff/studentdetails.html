@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- css styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+          integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">    
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% include 'navbar/staffnav.html' %}
+        <div class="container" style="margin-top: 56px;">   
+            <h1 style="text-align: center; background-color: #000050; color: #fff; margin-bottom: 2rem;">STUDENT DETAILS</h1>         
+            <div class="card-deck">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Marks Details</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Update, Add or View the students marks record.</h5>
+                        <a href="{% url 'Fill Marks Page' %}" class="btn btn-primary">ADD</a>
+                        <a href="{% url 'Marks Page' %}" class="btn btn-primary">VIEW</a>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Attendance Details</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Update, Add or View the students attendance record.</h5>
+                        <a href="{% url 'Fill Attendance Page' %}" class="btn btn-primary">ADD</a>
+                        <a href="{% url 'Attendance Page' %}" class="btn btn-primary">VIEW</a>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Fees Details</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Update, Add or View the students fee record.</h5>
+                        <a href="{% url 'Fill Fees Page' %}" class="btn btn-primary">ADD</a>
+                        <a href="{% url 'Fees Page' %}" class="btn btn-primary">VIEW</a>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Student Profiles</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Update, Add or View the students profile details.</h5>
+                        <a href="{% url 'Edit Student Profile' %}" class="btn btn-primary">ADD</a>
+                        <a href="{% url 'Show Students Profiles' %}" class="btn btn-primary">VIEW</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+<footer>{% include 'navbar/footer.html' %}</footer>         
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fees</title>
+    <!-- css styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/editform.css' %}">   
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body><center>{% include 'navbar/staffnav.html' %}
+<form class="from-control" method="post">
+    {% csrf_token %}
+    <div class="container">
+        <div class="contain">
+            <h1 style="margin-top: 30px;">Student Fees Details</h1><br>
+            <div class="form-group row justify-content-center" style="margin-top: 25px;">
+                <label class="col-sm-2 col-form-label">ID Number</label>
+                <div class="col-sm-5 center-it">
+                    <input type="text" name="id number" required/> <br/>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 col-form-label" for="sel1">Academic Year</label>
+                    <div class="col-sm-5 center-it">
+                        <select id="sel1" name="academic year">
+                            <option>2016-17</option>
+                            <option>2017-18</option>
+                            <option>2018-19</option>
+                            <option>2019-20</option>
+                        </select><br/>
+                    </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 col-form-label">Amount</label>
+                <div class="col-sm-5 center-it">
+                    <input type="text" name="amount" maxlength="6" required/> <br/>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 col-form-label" for="sel2">Semester</label>
+                <div class="col-sm-5 center-it">
+                    <select id="sel2" name="semester">
+                        <option>FE</option>
+                        <option>SE</option>
+                        <option>TE</option>
+                        <option>BE</option>
+                    </select><br/>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 col-form-label" for ="sel3">Status</label>
+                <div class="col-sm-5 center-it">
+                    <select id="sel3" name="status" required>
+                        <option>Paid</option>
+                        <option>Pending</option>
+                    </select><br/>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 col-form-label">Due Date</label>
+                <div class="col-sm-5 center-it">
+                    <input type="text" name="due date" /> <br/>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-sm-5 center-it">
+                    <button class="btn btn-success" type="submit">Submit </button><br/>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+</form>
+</center>
+</body>
+</html>

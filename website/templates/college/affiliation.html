@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load  static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+          integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/textstyles.css' %}">      
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+{% include 'navbar/navbar.html' %}
+    <p id="para1" style="margin-top: 56px; margin-bottom: 2rem;">Affliation From Mumbai University</p>
+    <div class="data-container">
+        <table class="table table-responsive">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="text-center">Year of Approval</th>
+                    <th class="text-center">Issued by</th>
+                    <th class="text-center">Date</th>
+                    <th class="text-center">Reference Number</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1990-91</td>
+                    <td>University of Mumbai (Computer/Electronics)</td>
+                    <td>1st October 1990</td>
+                    <td>No. Aff./Recog./5735 of 1990</td>
+                </tr>
+                <tr>
+                    <td>1996-97</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation) Period 1992-93 to 1995-1996</td>
+                    <td>1st February 1997</td>
+                    <td>No. Aff/Recog./864 of 1997</td>
+                </tr>
+                <tr>
+                    <td>1999-2000</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation) Period 1996-97 to 1999-2000</td>
+                    <td>17th September 1999</td>
+                    <td>No. Aff./Recog./4844 of 1999</td>
+                </tr>
+                <tr>
+                    <td>2002-03</td>
+                    <td>University of Mumbai (Marine)</td>
+                    <td>6th July 2002</td>
+                    <td>No. Aff./Recog./2814 of 2002</td>
+                </tr>
+                <tr>
+                    <td>2007-08</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation)</td>
+                    <td>24th August 2007</td>
+                    <td>No. Aff./Recog./148 of 2007</td>
+                </tr>
+                <tr>
+                    <td>2008-09</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation)</td>
+                    <td>11th November 2008</td>
+                    <td>No. Aff./Recog./6907 of 2008</td>
+                </tr>
+                <tr>
+                    <td>2016-17</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation)</td>
+                    <td>21st June 2016</td>
+                    <td>No. Aff-II./ICD/16-17/562</td>
+                </tr>
+                <tr>
+                    <td>2017-18</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation)</td>
+                    <td>22nd June 2017</td>
+                    <td><a onclick="createPdfModal('mumbaiUniversity2017-18Modal_ID','Mumbai Univeristy','.docs/Extension of Affiliation 2017-18.pdf');" href="#" data-toggle="modal" data-target="#mumbaiUniversity2017-18Modal_ID" title="View Document">NO.Aff./ICE/2017-18/264</a>
+                </td></tr>
+                <tr>
+                    <td>2018-19</td>
+                    <td>University of Mumbai (Continuation and Extension of Affiliation)</td>
+                    <td>26th July 2018</td>
+                    <td><a onclick="createPdfModal('mumbaiUniversity2018-19Modal_ID','Mumbai Univeristy','.docs/Continuation  Affiliation for the Degree Courses Letter of 2018-19.pdf');" href="#" data-toggle="modal" data-target="#mumbaiUniversity2018-19Modal_ID" title="View Document">NO.Aff./ICE/2018-19/344</a>
+                </td></tr>
+            </tbody>
+        </table>
+    </div>
+<footer>{% include 'navbar/footer.html' %}</footer>
+
+</body>
+</html>

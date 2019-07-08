@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load  static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vision Mision</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+          integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/textstyles.css' %}">      
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+		{% include 'navbar/navbar.html' %}
+		<div class="jumbotron" style="margin-top: 56px;"><p id="para1">Student Management System</p>
+		</div>
+        <div class="mission-vision-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 p-2">			
+						<h4 class="text-prime h1 text-center">Our Vision</h4>
+						<div class="text-justify">
+							<p>To provide an environment to explore, encourage and educate students by facilitating innovative research, entrepreneurship, opportunities and employability to achieve professional goals. </p>
+							<p>The following strategic characteristics and aspirations enable the college to realize its vision.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 p-2">			
+						<h4 class="text-prime h1 text-center">Our Mission</h4>
+						<div class="text-justify">
+							<p>To provide facilities in the area of research and development.</p>
+							<p>To initiate the collaboration with industries and academic institutions in terms of project and internship.</p>
+							<p>To build up appropriate moral and ethical skills, to promote holistic development of students through various academic, social and cultural activities.</p>
+							<p>To develop leadership and to sharpen the students skill by providing them opportunities for working in an innovative and interactive environment.</p>
+							<p>To kindle the zeal among the student and promote their quest for academic excellence.</p>
+							<p>To strengthen industry academic interaction to bridge the gap between theory and practice.</p>
+							<p>To recruit, retain and enable a diverse community of exceptional faculty and students.</p>
+							<p>To mould  the students into competent professionals to foster economic development to meet the societal needs globally.</p>
+						</div>
+					</div>
+				</div>		
+				<div class="row">
+					<div class="col-md-12 p-2">			
+						<h4 class="text-prime h1 text-center">Core Values</h4>
+						<div class="text-justify" style="margin-left: 15rem;">
+							<p class=""><span class="h2 p-2">P</span>ASSION FOR LEARNING</p>
+							<p class=""><span class="h2 p-2">V</span>ISIONARY</p>
+							<p class=""><span class="h2 p-2">P</span>ERSISTENT GROWTH</p>
+							<p class=""><span class="h2 p-2">P</span>ROMOTE NEW IDEAS AND INNOVATIONS</p>
+							<p class=""><span class="h2 p-2">C</span>ONCRETE PLATFORM FOR OVERALL DEVELOPMENT</p>
+							<p class=""><span class="h2 p-2">O</span>PPORTUNITIES TO CHALLENGE &amp; INSPIRE </p>
+							<p class=""><span class="h2 p-2">E</span>XCELLENCE IN PEDAGOGICAL ACTIVITIES</p>
+						</div>	
+					</div>
+				</div>
+		
+			</div>
+		</div>
+
+<style>
+
+body {background-color: #ffffff;}
+.h2 {color: #008b8b}
+
+</style>
+<footer>{% include 'navbar/footer.html' %}</footer>
+
+</body>
+</html>
